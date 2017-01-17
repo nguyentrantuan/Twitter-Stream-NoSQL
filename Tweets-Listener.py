@@ -27,8 +27,8 @@ def match(tweet, text):
 #Variables that contains the user credentials to access Twitter API
 consumer_key = 'xxx'
 consumer_secret ='xxx'
-access_token =  '192475831-i0ebmWsxTWKwLJ2MnS2T8Of29ZkyJmldg2iQBukj'
-access_token_secret =  'QfpDn1bkin9d2rPMfKkjkxSbwE4WDq2QzfVztnihqBDPF'
+access_token =  'xxx'
+access_token_secret =  'xxx'
 
 class CustomStreamListener(StreamListener):
 
