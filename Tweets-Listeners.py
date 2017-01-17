@@ -83,17 +83,9 @@ if __name__ == '__main__':
     auth = OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
     tweets = conn.Table('tweet_bank2')
-    sapi = Stream(auth, l)    
+    sapi = Stream(auth, l)
+    ### Filter users within Canada
     sapi.filter(languages=["en"], locations=[ -109.99 , 48.99 , -101.36 , 60.00 , -120.00 , 48.99 , -109.99 , 60.00 , -139.06 , 48.30 , -114.03 , 60.00, -120.68 , 51.64 ,  -61.08 , 83.11, -136.44 , 60.00 , -101.98 , 78.76, -141.00 , 60.00 , -123.81 , 69.65
                            , -95.16 , 41.66 ,  -74.34 , 56.86,  -79.76 , 44.99 ,  -57.10 , 62.59,  -69.06 , 44.60 ,  -63.77 , 48.07 ,  -66.32 , 43.42 ,  -59.68 , 47.03,  -67.80 , 46.61 ,  -52.61 , 60.37,  -61.50 , 47.18 ,  -60.13 , 47.80, -102.03 , 48.99 ,  -88.94 , 60.00
                            ,  -64.41 , 45.95 ,  -61.97 , 47.06])
        
-
-    """ OLD CODE
-    stream = Stream(auth, l)
-
-   
-
-    #This line filter Twitter Streams to capture data by the keywords: 'python', 'javascript', 'ruby'
-    stream.filter(language=["en"],track=['#CIBC','#RBC','Scotiabank','BMO'])
-    """
