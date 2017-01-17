@@ -12,8 +12,8 @@ from boto.dynamodb2 import connect_to_region
 from boto.provider import Provider
 
 aws_settings_provider = Provider('aws')
-ACCESS_KEY='AKIAJS6EV7XP44PHDEZA'
-SECRET_KEY='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'
+ACCESS_KEY='xxx'
+SECRET_KEY='xxx'
 REGION = "us-east-1"
 
 
@@ -25,8 +25,8 @@ def match(tweet, text):
     return False
 
 #Variables that contains the user credentials to access Twitter API
-consumer_key = 'zA8cUVfM09O8BEB6wXewOP3RJ'
-consumer_secret ='KwaOnT9ASKlWAgPJCVIvO38xG620bXOCS94ca6BmYvVpSDSSEB'
+consumer_key = 'xxx'
+consumer_secret ='xxx'
 access_token =  '192475831-i0ebmWsxTWKwLJ2MnS2T8Of29ZkyJmldg2iQBukj'
 access_token_secret =  'QfpDn1bkin9d2rPMfKkjkxSbwE4WDq2QzfVztnihqBDPF'
 
